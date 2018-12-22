@@ -27,7 +27,51 @@ module.exports = {
                 "Property": true
             }
         }],
-        "new-cap": "error"
+        "new-cap": "error",
+        "space-before-blocks": "error",
+        "padding-line-between-statements": [
+            "error",
+            {
+                "blankLine": "always",
+                "prev": "*",
+                "next": "return"
+            },
+            {
+                "blankLine": "always",
+                "prev": ["const", "let", "var"],
+                "next": "*"
+            },
+            {
+                "blankLine": "any",
+                "prev": ["const", "let", "var"],
+                "next": ["const", "let", "var"]
+            },
+            {
+                "blankLine": "always",
+                "prev": ["*"],
+                "next": ["if"]
+            },
+            {
+                "blankLine": "always",
+                "prev": ["*"],
+                "next": ["function"]
+            }
+        ],
+        "one-var": ["error", "never"],
+        "no-use-before-define": ["error", { "variables": false }],
+        "no-array-constructor": "error",
+        "quote-props": ["error", "consistent-as-needed"],
+        "quotes": ["error", "single", { "avoidEscape": true }],
+        "key-spacing": ["error", { "mode": "strict" }],
+        "valid-jsdoc": "error",
+        "no-new-object": "error",
+        "indent": ["error", "tab", { "SwitchCase": 1 }],
+        "prefer-const": "error",
+        "no-eval": "error",
+        "camelcase": ["error", {"properties": "never"}],
+        "newline-after-var": ["error", "always"],
+        "block-scoped-var": "error",
+        "no-global-assign": "error"
 
     },
     "globals": {
