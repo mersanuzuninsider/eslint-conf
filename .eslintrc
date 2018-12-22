@@ -71,8 +71,8 @@ module.exports = {
         "camelcase": ["error", {"properties": "never"}],
         "newline-after-var": ["error", "always"],
         "block-scoped-var": "error",
-        "no-global-assign": "error"
-
+		"no-global-assign": "error",
+		"comma-spacing": ["error", { "before": false, "after": true }]
     },
     "globals": {
         "sQuery": true,
