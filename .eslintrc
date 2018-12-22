@@ -91,7 +91,8 @@ module.exports = {
         "sessionStorage": true,
         "dataLayer": true,
         "XMLHttpRequest": true,
-        "performance": true
+        "performance": true,
+        "insider_object": true
 
     },
     "env": {
