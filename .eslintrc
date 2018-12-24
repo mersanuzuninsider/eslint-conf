@@ -65,7 +65,7 @@ module.exports = {
         "key-spacing": ["error", { "mode": "strict" }],
         "valid-jsdoc": "error",
         "no-new-object": "error",
-        "indent": ["error", "tab", { "SwitchCase": 1 }],
+		"indent": ["error", 4, { "SwitchCase": 1}],
         "prefer-const": "error",
         "no-eval": "error",
         "camelcase": ["error", {"properties": "never"}],
@@ -73,6 +73,7 @@ module.exports = {
         "block-scoped-var": "error",
 		"no-global-assign": "error",
 		"comma-spacing": ["error", { "before": false, "after": true }]
+
     },
     "globals": {
         "sQuery": true,
