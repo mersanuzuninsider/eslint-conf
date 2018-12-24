@@ -2,7 +2,7 @@
 This configuration is created for imporving development process. You should copy .eslintrc file to your workspace.
 
 ### Installation
-Prerequisites: Node.js (>=6.14), npm version 3+.
+Prerequisites: **Node.js (>=6.14)**, **npm version 3+**.
 
 * Open a terminal
 * Run ``` npm install -g eslint ``` as root in the terminal
