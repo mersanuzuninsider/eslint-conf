@@ -63,17 +63,15 @@ module.exports = {
         "quote-props": ["error", "consistent-as-needed"],
         "quotes": ["error", "single", { "avoidEscape": true }],
         "key-spacing": ["error", { "mode": "strict" }],
-        "valid-jsdoc": "error",
         "no-new-object": "error",
-		"indent": ["error", 4, { "SwitchCase": 1}],
+        "indent": ["error", 4, { "SwitchCase": 1, "VariableDeclarator": 4}],
         "prefer-const": "error",
         "no-eval": "error",
         "camelcase": ["error", {"properties": "never"}],
         "newline-after-var": ["error", "always"],
-        "block-scoped-var": "error",
 		"no-global-assign": "error",
-		"comma-spacing": ["error", { "before": false, "after": true }]
-
+        "comma-spacing": ["error", { "before": false, "after": true }],
+        "no-shadow": ["error", { "hoist": "functions" }]
     },
     "globals": {
         "sQuery": true,
@@ -94,7 +92,6 @@ module.exports = {
         "XMLHttpRequest": true,
         "performance": true,
         "insider_object": true
-
     },
     "env": {
         "es6": false
